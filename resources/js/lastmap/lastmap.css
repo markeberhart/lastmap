@@ -1,0 +1,415 @@
+body {
+  display:block;
+  overflow:hidden;
+}
+
+#content {
+	width:auto;
+	height:100%;
+	padding:0px 20px 20px 20px;
+}
+
+.hide {
+	visibility:hidden;
+}
+
+.seal {
+	height:75px;
+	float:left;
+}
+
+#header {
+	position:relative;
+	height:75px;
+	width:100%;
+	/* border-bottom:1px solid rgb(88,89,91); */
+	border-bottom:1px solid rgba(0,0,0,0.2);
+	margin-bottom:10px;
+}
+
+#headerLeft {
+	float:left;
+	width:90%;
+}
+#headerRight {
+	/*float:right;*/
+}
+
+#headerTitle {
+	font-family: Arial Narrow, Helvetica, sans-serif;
+	font-size:28px;
+	font-weight:bold;
+	padding-left:10px;
+	padding-top:20px;
+}
+
+#headerTitleCountry {
+	color:rgb(55, 166, 173);
+	float:left;
+}
+#headerTitleText {
+	position:inherit;
+	float:left;
+	padding-left:5px;
+}
+
+#titleSubtitle {
+	font-family: "Franklin Gothic Medium Cond", sans-serif;
+	font-size:16px;
+}
+
+.classification {
+	font-family: Arial Narrow;
+	font-size:12px;
+	font-weight:bold;
+	color:rgb(203, 32, 40);
+	text-transform:uppercase;
+}
+
+#topClassification {
+	position:absolute;
+	top:10px;
+	right:0;
+	text-align:right;
+	
+}
+
+#buttons {
+	position:absolute;
+	right:0px;
+	top:50px;
+
+	width:auto;
+}
+
+.buttonClass {
+	cursor:pointer;
+}
+
+.button {
+	float:right;
+	cursor:pointer;
+
+	width:100px;
+}
+
+.buttonIcon {
+	margin-top:2px;
+	margin-right:2px;
+	float:left;
+	height:15px;
+	width:15px;
+}
+
+.buttonText {
+	float:left;
+	font-family: Arial, Helvetica, sans-serif, sans-serif;
+	font-size:14px;
+	top:-5px;
+	width:auto;
+}
+
+#buttonSummary {
+	background:no-repeat url(../images/icon_summary_15x15.png);
+}
+
+#buttonSummary:hover {
+	background:no-repeat url(../images/icon_summary_15x15.png);
+}
+
+#buttonResources {
+	background:no-repeat url(../images/icon_resources_15x15.png);
+}
+
+#buttonResources:hover {
+	background:no-repeat url(../images/icon_resources_15x15.png);
+}
+
+
+#footer {
+	margin-top:10px;
+	height:40px;
+	width:100%;
+	position:relative;
+	float:left;
+	clear:both;
+}
+
+#footerLeft {
+	position:absolute;
+	top:0;
+	left:0;
+	text-align:left;
+}
+
+#footerRight {
+	position:absolute;
+	top:0;
+	right:0;
+	text-align:right;
+}
+
+#footerLeft p, #footerRight p {
+	margin:0;
+	padding-bottom:2px;
+}
+
+#classifiedBy {
+	font-size:10px;
+	color:#333;
+	font-weight:normal;
+}
+
+#disclaimer {
+	font-size:10px;
+	font-style:italic;
+}
+
+#tracking {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+#productNumber {
+	color:rgb(55, 166, 173);
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+  background-color:#FFF;
+}
+
+#map {
+  	width:auto;
+	height:100%;
+	/*background-color: rgb(220,241,252);
+	margin-right:250px;*/
+	margin-right:0px;
+}
+
+#insetmap {
+	z-index:1000;
+	position:absolute;
+	top:90px;
+	right:25px;
+	border: 2px solid #888;
+	margin:15px;
+}
+
+
+/*
+Styles for Map Key
+*/
+#mapKey {
+	bottom:430px;
+	position:absolute;
+	right:50px;
+	width:250px;
+}
+
+#mapKeyHeader {
+	height:40px;
+	width:inherit;
+	background:rgb(255,255,255);
+	opacity:0.5;
+	-moz-opacity:0.5;
+	filter: alpha(opacity=50);
+}
+
+#mapKey h1{
+	position:absolute;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-transform:uppercase;
+	text-align:center;
+	padding:14px;
+	margin:0;
+	z-index:8888;
+	width:220px;
+}
+
+.mapKeyList {
+	position:absolute;
+	width:inherit;
+
+}
+
+#mapKeyCityCircle {
+	width:30px;
+	height:30px;
+}
+
+#mapKeyContent {
+	position:absolute;
+	z-index:200;
+}
+
+#mapKeyContentBackground {
+	position:absolute;
+	height:10px;
+	width:100%;
+	background:rgb(255,255,255);
+	top:0px;
+	z-index:10;
+	opacity:0.6;
+	-moz-opacity:0.6;
+	filter: alpha(opacity=60);
+}
+
+.mapKeyItem {
+	font-family:Arial, Helvetica, sans-serif;
+	width:inherit;
+	margin:5px;
+	display:flex;
+	padding:3px 10px;
+	font-size:12px;
+	overflow:hidden;
+	cursor:pointer;
+	z-index:400;
+}
+
+.mapKeyItemStyleSolid {
+	float:left;
+	height:15px;
+	width:30px;
+	margin-right:5px;
+}
+
+.mapKeyItemStylePoint {
+	padding-left:8px;
+	float:left;
+	height:15px;
+	width:30px;
+	margin-right:5px;
+}
+
+.mapKeyItemStyleLine {
+	float:left;
+	height:1px;
+	width:30px;
+	margin-top:8px;
+	margin-right:5px;
+}
+
+.mapKeyItemName {
+	margin-top:3px;
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+.mapKeyCityText {
+	width:200px;
+}
+
+.mapKeyGroup h2 {
+	position:relative;
+	font-size:14px;
+	text-transform:uppercase;
+	margin-top:0;
+	margin-bottom:0;
+	padding:10px 0;
+	border-top:rgb(200,200,200) 1px solid;
+	text-align:center;
+	background-color:#E6E6E6;
+	color:#666;
+}
+
+.mapKeyGroup {
+	padding-bottom:10px;
+	z-index:300;
+}
+
+
+.grab {
+	cursor:pointer;
+	cursor:-webkit-grab;
+	cursor:-moz-grab;
+}
+
+.grabbing {
+	cursor:pointer;
+	cursor:-webkit-grabbing;
+	cursor:-moz-grabbing;
+}
+
+.city {
+	stroke:none;
+	fill:rgb(45,45,45);	
+}
+#capitalIcon {
+	stroke:none;
+	fill:rgb(45,45,45);
+	fill-rule:evenodd;	
+}
+
+.capitalText {
+	fill:rgb(45,45,45);
+	stroke:none;
+	font-family:"Franklin Gothic Medium", sans-serif;
+	font-size:14px;
+	text-transform:capitalize;
+	pointer-events:none;
+	text-shadow: -2px -2px 3px #fff;
+}
+
+.city-text {
+		/*border:1px solid red;*/
+	font-family:"Franklin Gothic Book", sans-serif;
+	font-size:14px;
+	line-height:.9em;
+	text-transform:capitalize;
+	pointer-events:none;
+	text-align:center;
+	width:100px;
+	margin-left:-45px;
+	text-shadow: 0px 0px 5px #fff;
+	
+}
+
+.city-label {
+	pointer-events:none;
+}
+
+
+.city {
+	stroke:none;
+	fill:rgb(45,45,45);	
+}
+
+#capitalIcon {
+	stroke:none;
+	fill:rgb(45,45,45);
+	fill-rule:evenodd;	
+}
+
+.capitalText {
+	fill:rgb(45,45,45);
+	stroke:none;
+	font-family:"Franklin Gothic Medium", sans-serif;
+	font-size:14px;
+	line-height:.5em;
+	text-transform:capitalize;
+	pointer-events:none;
+}
+
+
+.country-label {
+	color:rgb(130,130,130);
+	stroke:none;
+	font-family: Arial Narrow;
+	font-size:2.2em;
+	font-weight:bold;
+	text-align:center;
+	text-transform:capitalize;
+	pointer-events:none;
+	line-height:.9em;
+	width:150px;
+	opacity:0.6;
+	-moz-opacity:0.6;
+	filter: alpha(opacity=60);
+}
+
